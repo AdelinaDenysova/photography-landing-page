@@ -1,0 +1,20 @@
+.gallery {
+  padding-top: 85px;
+  padding-bottom: 304px;
+}
+
+.gallery__title {
+  margin-bottom: 86px;
+  @include font($fw: 500, $fz: 36px, $lh: 1.23, $ls: 0.2em);
+  text-align: center;
+}
+
+.gallery__wrap {
+  display: flex;
+  flex-direction: calc(100% / 4 - 30px);
+  margin-right: -30px;
+}
+
+.gallery__img {
+  margin-right: 30px;
+}

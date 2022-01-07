@@ -1,0 +1,40 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 160px;
+}
+
+.header__logo {
+  margin-bottom: 80px;
+  @include font($fw: 500, $fz: 48px, $lh: 1.23, $ls: 0.2em);
+  text-align: center;
+  color: $main-text-color;
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 106px;
+}
+
+.header__link {
+  @include font($fw: 400, $fz: 18px, $lh: 1.23, $ls: 0.3em);
+  color: $main-text-color;
+  text-transform: uppercase;
+}

@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photography Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Sacramento&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header>
+    <header class="header">
+        <div class=" header__wrap">
         <a href="./index.html" class="link logo header__logo">Mount & Coast</a>
         <nav>
             <ul class="list header__list">
@@ -19,55 +24,80 @@
                 <li class="header__item"><a href="#" class="link header__link">My Life</a></li>
             </ul>
         </nav>
+        </div>
     </header>
 
     <main>
         <!-- Hero section -->
-        <section class="section">
-            <button type="button" class="button">Explore my photos</button>
+        <section class="hero">
+            <div class="hero__wrap">
+            <button type="button" class="btn btn--hero">Explore my photos</button>
+            </div>
         </section>
 
         <!-- About section -->
-        <section class="section">
-            <h2 class="title">Around the beauty</h2>
-            <ul class="list about__list">
-                <li class="about__item"><a href="#" class="link about__link">Mountain</a></li>
-                <li class="about__item"><a href="#" class="link about__link">Costal</a></li>
-                <li class="about__item"><a href="#" class="link about__link">Sea</a></li>
-                <li class="about__item"><a href="#" class="link about__link">Others</a></li>
-            </ul>
-            <img src="./images/photo-1.jpg" alt="ocean">
-            <img src="./images/photo-2.jpg" alt="ocean">
-            <img src="./images/photo-3.jpg" alt="ocean">
-            <img src="./images/photo-4.jpg" alt="ocean">
+        <section class="about">
+            <div class="about__container">
+                <h2 class="about__title">Around the beauty</h2>
+                <ul class="list about__list">
+                    <li class="about__item"><a href="#" class="link about__link">Mountain</a></li>
+                    <li class="about__item"><a href="#" class="link about__link">&nbsp;Costal</a></li>
+                    <li class="about__item"><a href="#" class="link about__link">&nbsp;Sea</a></li>
+                    <li class="about__item"><a href="#" class="link about__link">&nbsp;Others</a></li>
+                </ul>
+            <div class="row">
+                <div class="column">
+                    <img src="./images/photo-1.jpg" alt="ocean" width="255px">
+                </div>
+                <div class="column column--middle">
+                    <img src="./images/photo-2.jpg" alt="ocean" width="350px">
+                    <img src="./images/photo-3.jpg" alt="ocean" width="350px">
+                </div>
+                <div class="column">
+                    <img src="./images/photo-4.jpg" alt="ocean" width="255px">
+                </div>
+            </div>
 
-            <a href="#">More</a>
+                <a href="#" class="about__more">More</a>
+            </div>
+        </section>
 
-            <div class="card">
-                    <img src="./images/photographer.jpg" alt="photographer">
-                    <h3 class="card__title">Photographer</h3>
-                    <h2 class="title">Anna Jennifer</h2>
-                    <p>Consectetur elit consectetur culpa laborum commodo cillum duis voluptate aliquip. Cillumm pariatur id duis cupidatat non
-                    eu duis voluptate commodo ut. Do cupidatat ipsum ex velit cillum consectetur cupidatat amet. Veniam occaecat est anim
-                    sint exercitation adipisicing. Sunt occaecat commodo quis commodo culpa.</p>
-                    <button type="button" class="button">Learn more</button>
+        <section class="card">
+            <div class="container">
+                <div class="card__thumb">
+                        <img class="card__img" src="./images/photographer.jpg" alt="photographer" width="445px">
+                        <div class="card__description">
+                            <h3 class="card__title">Photographer</h3>
+                            <h2 class="card__name">Anna Jennifer</h2>
+                            <p class="card__text">Consectetur elit consectetur culpa laborum commodo cillum duis voluptate aliquip. Cillumm pariatur id duis cupidatat non
+                            eu duis voluptate commodo ut. Do cupidatat ipsum ex velit cillum consectetur cupidatat amet. Veniam occaecat est anim
+                            sint exercitation adipisicing. Sunt occaecat commodo quis commodo culpa.</p>
+                            <button type="button" class="btn btn--card">Learn more</button>
+                        </div>
+                </div>
             </div>
         </section>
 
         <!-- Gallery section -->
-        <section class="section">
-            <h2 class="title">Instagram feed</h2>
-            <img src="./images/insta-photo-1.jpg" alt="mountain">
-            <img src="./images/insta-photo-2.jpg" alt="canyon">
-            <img src="./images/insta-photo-1.jpg" alt="rock">
-            <img src="./images/insta-photo-1.jpg" alt="rock">
+        <section class="gallery">
+            <div class="container">
+                <h2 class="gallery__title">Instagram feed</h2>
+                <div class="gallery__wrap">
+                    <img class="gallery__img" src="./images/insta-photo-1.jpg" alt="mountain">
+                    <img class="gallery__img" src="./images/insta-photo-2.jpg" alt="canyon">
+                    <img class="gallery__img" src="./images/insta-photo-3.jpg" alt="rock">
+                    <img class="gallery__img" src="./images/insta-photo-4.jpg" alt="rock">
+                </div>
+            </div>
         </section>
     </main>
     <footer>
+        <div class="container">
         <a href="#" class="link logo logo__footer">Mount & Coast</a>
 
         <p>Get in touch</p>
         <p>anna jennifer</p>
+        </div>
     </footer>
 </body>
 </html>

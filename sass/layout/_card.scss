@@ -1,0 +1,37 @@
+.card {
+  padding-top: 150px;
+  padding-bottom: 161px;
+}
+
+.card__img {
+  height: auto;
+}
+
+.card__thumb {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+
+.card__description {
+  padding: 74px 62px;
+}
+
+.card__title {
+  margin-bottom: 38px;
+  @include font($fw: 500, $fz: 18px, $lh: 1.23, $ls: 0.3em);
+  color: $third-text-color;
+}
+
+.card__name {
+  @include font($fw: 500, $fz: 36px, $lh: 1.23, $ls: 0.3em);
+  margin-bottom: 48px;
+  color: $main-text-color;
+}
+
+.card__text {
+  margin-bottom: 45px;
+  @include font($fw: 400, $fz: 18px, $lh: 1.67, $ls: 0.1em);
+  color: $third-text-color;
+  text-align: justify;
+}

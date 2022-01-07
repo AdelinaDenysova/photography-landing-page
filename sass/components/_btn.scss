@@ -1,0 +1,17 @@
+.btn {
+  text-transform: uppercase;
+  color: $main-text-color;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: 1px solid rgba(51, 51, 51, 1);
+}
+
+.btn--hero {
+  @include font($fw: 600, $fz: 18px, $lh: 1.23, $ls: 0.1em);
+  padding: 27px 57px;
+}
+
+.btn--card {
+  @include font($fw: 600, $fz: 14px, $lh: 2.14, $ls: 0.1em);
+  padding: 13px 24px;
+}
