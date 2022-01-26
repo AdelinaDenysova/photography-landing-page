@@ -1,4 +1,5 @@
 .btn {
+  display: block;
   text-transform: uppercase;
   color: $main-text-color;
   background-color: transparent;
@@ -7,8 +8,14 @@
 }
 
 .btn--hero {
-  @include font($fw: 600, $fz: 18px, $lh: 1.23, $ls: 0.1em);
-  padding: 27px 57px;
+  margin: 0 auto;
+  @include font($fw: 600, $fz: 14px, $lh: 1.23, $ls: 0.1em);
+  padding: 17px 10px;
+
+  @media screen and (min-width: 768px) {
+    @include font($fw: 600, $fz: 18px, $lh: 1.23, $ls: 0.1em);
+    padding: 27px 57px;
+  }
 }
 
 .btn--card {

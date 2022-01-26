@@ -1,0 +1,47 @@
+.footer {
+  margin: 0 auto;
+  padding-top: 680px;
+  padding-bottom: 228px;
+  background-image: url(/images/footer.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__container {
+  position: relative;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 31px;
+  @include font($fw: 500, $fz: 28px, $lh: 1.21, $ls: 0.2em);
+  color: $footer-text-color;
+}
+
+.footer__label {
+  margin-bottom: 32px;
+  @include font($fw: 400, $fz: 18px, $lh: 1.23, $ls: 0.2em);
+  color: $footer-text-color;
+}
+
+.footer__list {
+  display: flex;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 29px;
+}
+
+.footer__icon {
+  fill: $footer-text-color;
+}
+
+.footer__name {
+  position: absolute;
+  right: 165px;
+  bottom: 0;
+  font-family: "Sacramento", serif;
+  @include font($fw: 400, $fz: 48px, $lh: 1.46, $ls: 0em);
+  color: $footer-text-color;
+}

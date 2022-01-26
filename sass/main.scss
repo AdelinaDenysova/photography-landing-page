@@ -1,6 +1,7 @@
 @import "./utils/vars";
 @import "./utils/mixins";
 
+@import "./base/section";
 @import "./base/common";
 @import "./base/reset";
 
@@ -12,3 +13,4 @@
 @import "./layout/about";
 @import "./layout/card";
 @import "./layout/gallery";
+@import "./layout/footer";
