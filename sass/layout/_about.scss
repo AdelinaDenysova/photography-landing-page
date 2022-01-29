@@ -45,6 +45,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 33px;
+  }
+
+  @media screen and (min-width: 768px) {
     margin-bottom: 63px;
   }
 }
@@ -70,6 +74,15 @@
 
   @media screen and (min-width: 768px) {
     @include font($fw: 500, $fz: 18px, $lh: 1.23, $ls: 0.2em);
+  }
+}
+
+.about__img {
+  @media screen and (max-width: 767.5px) {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
   }
 }
 
