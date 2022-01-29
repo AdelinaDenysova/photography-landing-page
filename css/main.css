@@ -399,7 +399,7 @@ button {
 }
 
 .card__img {
-  height: auto;
+  width: 100%;
 }
 
 .card__thumb {
