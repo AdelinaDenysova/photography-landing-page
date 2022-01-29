@@ -223,14 +223,34 @@ button {
   }
 }
 
+.about__container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .about__container {
+    width: 480px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .about__container {
-    margin: 0 auto;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__container {
+    width: 1200px;
+    padding-left: 140px;
+    padding-right: 140px;
   }
 }
 
 .about__title {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.23;
@@ -249,6 +269,12 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .about__title {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .about__list {
     display: flex;
     align-items: center;
@@ -257,7 +283,13 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199.5px) {
+  .about__item {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .about__item:not(:last-child)::after {
     content: " /";
     font-weight: 500;
@@ -270,7 +302,7 @@ button {
 
 .about__link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.23;
   letter-spacing: 0.2em;
   color: #bdbdbd;
@@ -278,23 +310,38 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .about__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.23;
+    letter-spacing: 0.2em;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-left: -10px;
+    margin-bottom: 34px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .row {
     margin-left: -30px;
-    margin-bottom: 34px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .column {
+    width: 28%;
   }
 }
 
 @media screen and (max-width: 1199.5px) {
   .column {
-    width: 239px;
     margin-left: 10px;
   }
 }
@@ -310,6 +357,12 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .column--middle {
+    width: 38%;
   }
 }
 

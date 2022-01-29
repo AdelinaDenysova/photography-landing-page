@@ -35,24 +35,57 @@
 
         <!-- About section -->
         <section class="about">
-            <div class="about__container container">
+            <div class="about__container">
                 <h2 class="about__title">Around the beauty</h2>
                 <ul class="list about__list">
-                    <li class="about__item"><a href="#" class="link about__link">Mountain</a></li>
+                    <li class="about__item"><a href="#" class="link about__link">&nbsp;Mountain</a></li>
                     <li class="about__item"><a href="#" class="link about__link">&nbsp;Costal</a></li>
                     <li class="about__item"><a href="#" class="link about__link">&nbsp;Sea</a></li>
                     <li class="about__item"><a href="#" class="link about__link">&nbsp;Others</a></li>
                 </ul>
             <div class="row">
                 <div class="column">
-                    <img src="./images/photo-1.jpg" alt="ocean" width="255px">
+                    <picture>
+                        <source 
+                        srcset="./images/photo-1.jpg"
+                        media="(min-width: 768px)">
+                        <source 
+                        srcset="./images/photo-1-mob.jpg" 
+                        media="(min-width: 0px)">
+                        <img src="./images/photo-1.jpg" alt="ocean">
+                    </picture>
                 </div>
                 <div class="column column--middle">
-                    <img src="./images/photo-2.jpg" alt="ocean" width="350px">
-                    <img src="./images/photo-3.jpg" alt="ocean" width="350px">
+                    <picture>
+                        <source
+                        srcset="./images/photo-2.jpg"
+                        media="(min-width: 768px)">
+                        <source
+                        srcset="./images/photo-2-mob.jpg"
+                        media="(min-width: 0px)">
+                        <img src="./images/photo-2.jpg" alt="ocean">
+                    </picture>
+                    <picture>
+                        <source
+                        srcset="./images/photo-3.jpg"
+                        media="(min-width:768px)">
+                        <source
+                        srcset="./images/photo-3-mob.jpg"
+                        media="(min-width: 0px)">
+                        <img src="./images/photo-3.jpg" alt="ocean">
+                    </picture>
                 </div>
                 <div class="column">
-                    <img src="./images/photo-4.jpg" alt="ocean" width="255px">
+                    <picture>
+                        <source
+                        srcset="./images/photo-4.jpg"
+                        media="(min-width:768px)"
+                        >
+                        <source 
+                        srcset="./images/photo-4-mob.jpg" 
+                        media="(min-width: 0px)">
+                        <img src="./images/photo-4.jpg" alt="ocean">
+                    </picture>
                 </div>
             </div>
 
