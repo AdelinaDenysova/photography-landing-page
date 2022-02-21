@@ -5,34 +5,57 @@
 }
 
 .card__img {
-  width: 100%;
+  height: auto;
 }
 
 .card__thumb {
-  display: flex;
-  flex-direction: row;
   background-color: #fff;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .card__description {
-  padding: 74px 62px;
+  padding: 25px 25px;
+
+  @media screen and (min-width: 480px) {
+    padding: 45px 45px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 74px 62px;
+  }
 }
 
 .card__title {
   margin-bottom: 38px;
-  @include font($fw: 500, $fz: 18px, $lh: 1.23, $ls: 0.3em);
+  @include font($fw: 500, $fz: 18px, $lh: 1.23, $ls: 0.2em);
   color: $third-text-color;
+
+  @media screen and (min-width: 480px) {
+    @include font($fw: 500, $fz: 18px, $lh: 1.23, $ls: 0.3em);
+  }
 }
 
 .card__name {
-  @include font($fw: 500, $fz: 36px, $lh: 1.23, $ls: 0.3em);
+  @include font($fw: 500, $fz: 36px, $lh: 1.23, $ls: 0.2em);
   margin-bottom: 48px;
   color: $main-text-color;
+
+  @media screen and (min-width: 480px) {
+    @include font($fw: 500, $fz: 36px, $lh: 1.23, $ls: 0.3em);
+  }
 }
 
 .card__text {
   margin-bottom: 45px;
   @include font($fw: 400, $fz: 18px, $lh: 1.67, $ls: 0.1em);
   color: $third-text-color;
-  text-align: justify;
+
+  @media screen and (min-width: 480px) {
+    @include font($fw: 400, $fz: 18px, $lh: 1.67, $ls: 0.1em);
+    text-align: justify;
+  }
 }

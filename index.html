@@ -96,7 +96,15 @@
         <section class="card">
             <div class="container">
                 <div class="card__thumb">
-                        <img class="card__img" src="./images/photographer.jpg" alt="photographer">
+                    <picture>
+                        <source
+                        srcset="./images/photographer.jpg"
+                        media="(min-width: 768px)">
+                        <source 
+                        srcset="./images/photographer-mob.jpg" 
+                        media="(min-width: 0px)">
+                        <img class="card__img" src="./images/photographer.jpg" alt="photographer" width="445px">
+                    </picture>
                         <div class="card__description">
                             <h3 class="card__title">Photographer</h3>
                             <h2 class="card__name">Anna Jennifer</h2>
@@ -161,5 +169,6 @@
                 <p class="footer__name">anna jennifer</p>
         </div>
     </footer> -->
+    <script src="./js/tasks4-2.js" type="module"></script>
 </body>
 </html>

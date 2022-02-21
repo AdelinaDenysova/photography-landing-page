@@ -62,8 +62,6 @@ button {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-left: 165px;
-    padding-right: 165px;
   }
 }
 
@@ -403,13 +401,30 @@ button {
 }
 
 .card__thumb {
-  display: flex;
-  flex-direction: row;
   background-color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .card__thumb {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .card__description {
-  padding: 74px 62px;
+  padding: 25px 25px;
+}
+
+@media screen and (min-width: 480px) {
+  .card__description {
+    padding: 45px 45px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card__description {
+    padding: 74px 62px;
+  }
 }
 
 .card__title {
@@ -417,17 +432,35 @@ button {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.23;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   color: #828282;
+}
+
+@media screen and (min-width: 480px) {
+  .card__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.23;
+    letter-spacing: 0.3em;
+  }
 }
 
 .card__name {
   font-weight: 500;
   font-size: 36px;
   line-height: 1.23;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   margin-bottom: 48px;
   color: #333333;
+}
+
+@media screen and (min-width: 480px) {
+  .card__name {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.23;
+    letter-spacing: 0.3em;
+  }
 }
 
 .card__text {
@@ -437,7 +470,16 @@ button {
   line-height: 1.67;
   letter-spacing: 0.1em;
   color: #828282;
-  text-align: justify;
+}
+
+@media screen and (min-width: 480px) {
+  .card__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.1em;
+    text-align: justify;
+  }
 }
 
 .gallery {
